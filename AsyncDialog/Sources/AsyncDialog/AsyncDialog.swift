@@ -1,12 +1,5 @@
 import UIKit
 
-public struct AsyncDialog {
-    public private(set) var text = "Hello, World!"
-
-    public init() {
-    }
-}
-
 public protocol DialogAction {
   var title: String { get }
   var isDangerous: Bool { get }
