@@ -13,6 +13,7 @@
 		39B5A17D2779BDE600ECEB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B5A17B2779BDE600ECEB1C /* Main.storyboard */; };
 		39B5A17F2779BDE800ECEB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39B5A17E2779BDE800ECEB1C /* Assets.xcassets */; };
 		39B5A1822779BDE800ECEB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B5A1802779BDE800ECEB1C /* LaunchScreen.storyboard */; };
+		39B5A18C2779BEAD00ECEB1C /* AsyncDialog in Frameworks */ = {isa = PBXBuildFile; productRef = 39B5A18B2779BEAD00ECEB1C /* AsyncDialog */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		39B5A17E2779BDE800ECEB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39B5A1812779BDE800ECEB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39B5A1832779BDE800ECEB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B5A1892779BE1000ECEB1C /* AsyncDialog */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AsyncDialog; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B5A18C2779BEAD00ECEB1C /* AsyncDialog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		39B5A1692779BDE600ECEB1C = {
 			isa = PBXGroup;
 			children = (
+				39B5A1892779BE1000ECEB1C /* AsyncDialog */,
 				39B5A1742779BDE600ECEB1C /* AsyncDialogBuilderSample */,
 				39B5A1732779BDE600ECEB1C /* Products */,
+				39B5A18A2779BEAD00ECEB1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = AsyncDialogBuilderSample;
 			sourceTree = "<group>";
 		};
+		39B5A18A2779BEAD00ECEB1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = AsyncDialogBuilderSample;
+			packageProductDependencies = (
+				39B5A18B2779BEAD00ECEB1C /* AsyncDialog */,
+			);
 			productName = AsyncDialogBuilderSample;
 			productReference = 39B5A1722779BDE600ECEB1C /* AsyncDialogBuilderSample.app */;
 			productType = "com.apple.product-type.application";
@@ -360,6 +375,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39B5A18B2779BEAD00ECEB1C /* AsyncDialog */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AsyncDialog;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39B5A16A2779BDE600ECEB1C /* Project object */;
 }
